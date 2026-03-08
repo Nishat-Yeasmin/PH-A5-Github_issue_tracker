@@ -1,0 +1,14 @@
+*{
+    font-family: "Geist", sans-serif;
+}
+
+  /* Active button style override DaisyUI primary */
+  .active-btn {
+    background-color: #1d4ed8 !important; /* blue-700 */
+    color: white !important;
+  }
+
+  .inactive-btn {
+    background-color: #e5e7eb !important; /* gray-200 */
+    color: black !important;
+  }
