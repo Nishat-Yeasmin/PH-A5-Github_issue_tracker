@@ -102,8 +102,6 @@ const displayIssues = (issues)=>{
         });
         const date = new Date(issue.createdAt).toLocaleDateString();
 
-
-        //---------
         card.innerHTML = `<div class="each-card rounded shadow-sm  py-3 px-3 space-y-2 ${borderTop}">
       <div class="card-title flex justify-between">
         <img src="${statusIcon}">
