@@ -12,3 +12,6 @@
     background-color: #e5e7eb !important; /* gray-200 */
     color: black !important;
   }
+  button{
+    cursor: pointer;
+  }
