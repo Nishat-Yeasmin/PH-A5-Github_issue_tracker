@@ -225,7 +225,7 @@ const showIssueDetails = (issue)=>{
     modalContent.innerHTML = `<section class="space-y-5 py-4 px-3 rounded-lg   mx-auto ">
     <h2 class="font-bold text-2xl text-[#1F2937]">${issue.title}</h2>
     <div class="List flex gap-1">
-      <button class="bg-${issue.priorityColor} rounded-2xl px-3 py-1">${issue.status}</button>
+      <button class="${issue.priorityColor} bg-green-500 rounded-2xl px-3 py-1">${issue.status}</button>
         <p class=" flex gap-1 items-center  text-gray-400"><img src="assets/Ellipse 5.png" alt="">Opened by ${issue.author}</p>
 
         <p class=" flex gap-1 items-center  text-gray-400"><img src="assets/Ellipse 5.png" alt="">${new Date(issue.createdAt).toLocaleDateString()}</p>
