@@ -38,11 +38,11 @@
       <path d="m21 21-4.3-4.3"></path>
     </g>
   </svg>
-          <input  type="search" placeholder="Search issues..." required />
+          <input id="input-search"  type="search" placeholder="Search issues..." required />
         </label>
       </div>
     
-      <button class="btn btn-active btn-primary">+ New issues</button>
+      <button id="btn-search" class="btn btn-active btn-primary">+ New issues</button>
             </section>
   </nav>
   <header class="w-11/12 mt-10 mx-auto h-18 mb-4 bg-white shadow-sm">
@@ -75,10 +75,28 @@
     </div>
   </section>
 
-  <section id="card-container" class="grid grid-cols-4 gap-4 w-11/12 mx-auto my-6 ">
-    
-
+  <section id="spinner" class="flex justify-center items-center py-10 hidden">
+    <span class="loading loading-dots loading-lg"></span>
   </section>
+
+  <section id="card-container" class="grid grid-cols-4 gap-4 w-11/12 mx-auto my-6 ">
+  </section>
+
+  
+
+  <!-- Open the modal using ID.showModal() method -->
+<!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
+<dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+  <div class="modal-box">
+    <div id="modal-content"></div>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn btn-primary">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
 
   <script src="script.js"></script>
 </body>
